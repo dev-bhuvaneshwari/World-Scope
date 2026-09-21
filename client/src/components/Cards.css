@@ -1,0 +1,314 @@
+/* ══════════════════════════════════════════════
+   Card Component Styles
+   ══════════════════════════════════════════════ */
+
+/* ── Country Card ──────────────────────────── */
+.country-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.country-card-flag {
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background: var(--color-bg-tertiary);
+}
+
+.country-card-flag img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.country-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.country-card-name {
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  color: var(--color-text-primary);
+}
+
+.country-card-detail {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.country-card-label {
+  color: var(--color-text-tertiary);
+  font-weight: var(--font-medium);
+}
+
+.country-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--color-border-light);
+}
+
+.country-card-code {
+  font-size: var(--text-xs);
+  font-weight: var(--font-bold);
+  color: var(--color-text-tertiary);
+  font-family: var(--font-mono);
+}
+
+/* ── News Card ─────────────────────────────── */
+.news-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.news-card-compact {
+  padding: var(--space-md);
+}
+
+.news-card-image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background: var(--color-bg-tertiary);
+  margin-bottom: var(--space-xs);
+}
+
+.news-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-card-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.news-card-category {
+  font-size: var(--text-xs);
+  font-weight: var(--font-semibold);
+  text-transform: capitalize;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+}
+
+.news-card-title {
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  line-height: var(--leading-tight);
+  color: var(--color-text-primary);
+}
+
+.news-card-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.news-card-title a:hover {
+  color: var(--color-brand);
+}
+
+.news-card-desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.news-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--text-xs);
+  color: var(--color-text-tertiary);
+  padding-top: var(--space-xs);
+}
+
+.news-card-source {
+  font-weight: var(--font-medium);
+}
+
+.news-card-country {
+  color: var(--color-brand);
+}
+
+/* ── Tech Card ─────────────────────────────── */
+.tech-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.tech-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+}
+
+.tech-card-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.tech-card-name {
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.tech-card-desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.tech-card-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-xs);
+  color: var(--color-text-tertiary);
+}
+
+.tech-card-link {
+  font-size: var(--text-xs);
+  color: var(--color-brand);
+  font-weight: var(--font-medium);
+  margin-top: auto;
+}
+
+.tech-card-stars {
+  font-size: var(--text-xs);
+  color: var(--color-warning);
+  font-weight: var(--font-medium);
+}
+
+/* ── Research Card ─────────────────────────── */
+.research-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.research-card-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.research-card-title {
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  line-height: var(--leading-tight);
+}
+
+.research-card-title a {
+  color: var(--color-text-primary);
+}
+
+.research-card-title a:hover {
+  color: var(--color-brand);
+}
+
+.research-card-authors {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.research-card-journal {
+  font-size: var(--text-xs);
+  color: var(--color-brand);
+  font-weight: var(--font-medium);
+}
+
+.research-card-abstract {
+  font-size: var(--text-sm);
+  color: var(--color-text-tertiary);
+  line-height: var(--leading-relaxed);
+}
+
+.research-card-citations {
+  font-size: var(--text-xs);
+  color: var(--color-text-tertiary);
+}
+
+/* ── Startup Card ──────────────────────────── */
+.startup-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.startup-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+
+.startup-card-name {
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+}
+
+.startup-card-desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.startup-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  font-size: var(--text-xs);
+  color: var(--color-text-tertiary);
+}
+
+/* ── Stat Card ─────────────────────────────── */
+.stat-card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.stat-card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inline-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 3px;
+}
+
+.star-icon {
+  display: inline-block;
+  vertical-align: middle;
+  color: var(--color-warning);
+}
+
