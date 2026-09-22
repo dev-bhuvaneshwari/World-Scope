@@ -31,7 +31,7 @@ export default function App() {
 
   return (
     <ThemeProvider>
-      <BrowserRouter basename={import.meta.env.BASE_URL || '/'}>
+      <BrowserRouter>
         <div className="app-layout">
           <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
 
